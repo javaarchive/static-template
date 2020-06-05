@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Midi Player</title>
+    <script src="https://unpkg.com/jzz@1.0.6/javascript/JZZ.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@2.5.1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/midi-parser-js@4.0.4/src/main.js"></script>
+    <link href="/style.css" rel="stylesheet"></link>
+    <script
+      src="https://cdn.jsdelivr.net/gh/nfroidure/midiplayer@master/dist/MIDIPlayer.js"
+      type="module"
+    ></script>
+    <script src="/modulescript.js" type="module"></script>
+    <script src="/script.js"></script>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <canvas id="screen"> </canvas>
+    <p id="loading-overlay">
+      Loading
+    </p>
+    <div class="menu invisble centered">
+      <h2>BrowserMidi</h2>
+      <h4>Load File: </h4>
+      <input type="file" id="fileinput"></input>
+    </div>
   </body>
 </html>

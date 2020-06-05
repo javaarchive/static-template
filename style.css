@@ -1,0 +1,39 @@
+#loading-overlay {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: popping;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.centered {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.menu {
+  text-align: centered;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+@keyframes popping {
+  0% {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  100% {
+    font-size: 24px;
+    letter-spacing: 4px;
+    filter: drop-shadow(0.5px 0.5px);
+  }
+}
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
